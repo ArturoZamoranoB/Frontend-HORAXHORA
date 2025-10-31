@@ -1,5 +1,5 @@
 
-const DEFAULT_API_URL = "http://localhost:3000/api/peticiones";
+const DEFAULT_API_URL = "https://backend-horaxhora.onrender.com/api/peticiones";
 
 
 const apiUrlInput = document.getElementById("apiUrl");
