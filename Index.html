@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HoraxHora – Intercambio de Tiempo</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/icon-512.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>HoraxHora – Intercambio de Tiempo</h1>
+    <div class="student">Alumno: <strong>Arturo Zamorano</strong></div>
+  </header>
+
+  <div id="offline-banner" class="offline-banner" hidden>
+    📴 Estás sin conexión. Mostrando datos guardados.
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <h2>Peticiones recientes</h2>
+      <p class="muted">Fuente: Web API publicada en Railway (configurable).</p>
+
+      <div class="controls">
+        <label for="apiUrl">URL del Web API:</label>
+        <input id="apiUrl" type="url" placeholder="https://tu-api.railway.app/api/peticiones" />
+        <button id="saveApiUrl">Guardar</button>
+        <button id="fetchBtn">Actualizar</button>
+      </div>
+
+      <ul id="list" class="list"></ul>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Instala HoraxHora</h2>
+      <p>Para instalar, abre el menú del navegador y selecciona <em>“Agregar a pantalla de inicio”</em>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 Arturo Zamorano • Proyecto HoraxHora (PWA con Stack Básico)</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
