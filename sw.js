@@ -11,19 +11,6 @@ const APP_ASSETS = [
   "./icons/icons-512.png"
 ];
 
-const APP_CACHE = "app-shell-v1";
-const API_CACHE = "api-cache-v1";
-
-const APP_ASSETS = [
-  "./",
-  "./index.html",
-  "./styles.css",
-  "./app.js",
-  "./manifest.webmanifest",
-  "./icons/icons-128.png",
-  "./icons/icons-512.png"
-];
-
 self.addEventListener("install", e => {
   e.waitUntil(
     caches.open(APP_CACHE)
